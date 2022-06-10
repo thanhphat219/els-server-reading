@@ -36,12 +36,12 @@ public class ReadingAnswer {
         this.uuid = uuid;
     }
 
-    @Column(name = "reading_question_uuid")
+    @Column(name = "readingquestionuuid")
     public String getReadingQuestionUuid() {
         return readingQuestionUuid;
     }
 
-    @Column(name = "reading_question_uuid")
+    @Column(name = "readingquestionuuid")
     public void setReadingQuestionUuid(String readingQuestionUuid) {
         this.readingQuestionUuid = readingQuestionUuid;
     }
