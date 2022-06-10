@@ -31,7 +31,7 @@ public class ReadingQuestion {
         this.uuid = uuid;
     }
 
-    @Column(name = "reading_essonuuid")
+    @Column(name = "readinglessonuuid")
     public String getReadingLessonUuid() {
         return readingLessonUuid;
     }
