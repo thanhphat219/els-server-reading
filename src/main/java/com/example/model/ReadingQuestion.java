@@ -1,5 +1,6 @@
 package com.example.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -30,10 +31,12 @@ public class ReadingQuestion {
         this.uuid = uuid;
     }
 
+    @Column(name = "reading_lesson_uuid")
     public String getReadingLessonUuid() {
         return readingLessonUuid;
     }
 
+    @Column(name = "reading_lesson_uuid")
     public void setReadingLessonUuid(String readingLessonUuid) {
         this.readingLessonUuid = readingLessonUuid;
     }
