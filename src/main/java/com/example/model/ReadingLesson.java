@@ -7,19 +7,17 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "readinglesson")
 public class ReadingLesson {
-  private String uuid;
+    private String uuid;
     private String title;
-    private String content;
     private int duration;
 
     public ReadingLesson() {
 
     }
 
-    public ReadingLesson(String uuid, String title, String content, int duration) {
+    public ReadingLesson(String uuid, String title, int duration) {
         this.uuid = uuid;
         this.title = title;
-        this.content = content;
         this.duration = duration;
     }
 
@@ -39,14 +37,6 @@ public class ReadingLesson {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public int getDuration() {
