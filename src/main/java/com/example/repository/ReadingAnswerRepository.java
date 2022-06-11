@@ -11,6 +11,6 @@ import java.util.List;
 
 @Repository
 public interface ReadingAnswerRepository extends JpaRepository<ReadingAnswer, String> {
-    @Query(value = "SELECT * FROM readinganswer WHERE readingquestionuuid = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM readinganswer WHERE readingquestionid = ?1", nativeQuery = true)
     List<ReadingAnswer> getReadingAnswerByReadingQuestion(String id);
 }
