@@ -13,4 +13,7 @@ import java.util.List;
 public interface ReadingAnswerRepository extends JpaRepository<ReadingAnswer, String> {
     @Query(value = "SELECT * FROM readinganswer WHERE readingquestionid = ?1", nativeQuery = true)
     List<ReadingAnswer> getReadingAnswerByReadingQuestion(String id);
+
+    @Query(value = "SELECT * FROM readinganswer WHERE readingquestionid = ?1 AND iscorrect = true", nativeQuery = true)
+    List<ReadingAnswer> getCorrectReadingAnswerByReadingQuestion(String id);
 }

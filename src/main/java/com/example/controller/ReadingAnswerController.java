@@ -27,4 +27,9 @@ public class ReadingAnswerController {
     public List<ReadingAnswer> getListeningQuestionByListeningLesson(@RequestParam String id) {
         return readingAnswerRepository.getReadingAnswerByReadingQuestion(id);
     }
+
+    @GetMapping("/readinganswercorrect/")
+    public List<ReadingAnswer> getCorrectReadingAnswerByReadingQuestion(@RequestParam String id) {
+        return readingAnswerRepository.getCorrectReadingAnswerByReadingQuestion(id);
+    }
 }
