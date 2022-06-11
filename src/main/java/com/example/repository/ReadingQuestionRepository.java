@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ReadingQuestionRepository extends JpaRepository<ReadingQuestion, String> {
-    @Query(value = "SELECT * FROM readingquestion WHERE readinglessonid = ?1", nativeQuery = true)
+    @Query(value = "SELECT rq FROM readingquestion rq WHERE rq.readinglessonid = ?1", nativeQuery = true)
     List<ReadingQuestion> getReadingQuestionByReadingLesson(String id);
 }

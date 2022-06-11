@@ -52,10 +52,12 @@ public class ReadingAnswer {
         this.answer = answer;
     }
 
+    @Column(name = "iscorrect")
     public boolean isCorrect() {
         return isCorrect;
     }
 
+    @Column(name = "iscorrect")
     public void setCorrect(boolean correct) {
         isCorrect = correct;
     }
